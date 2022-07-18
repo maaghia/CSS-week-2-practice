@@ -8,21 +8,51 @@ body {
   height: 72px;
   background: darkmagenta;
   color: white;
+  font-size: 40px;
+  font-weight: 700;
+  padding: 10px 20px 0px 20px ;
 }
-
+.main{
+  display: flex;
+  flex-direction: row;
+  height: 85vh;
+}
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  text-align: center;
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
+  width: 100vw;
 }
-
+.sidebar a{
+  text-decoration: none;
+  color: white;
+  line-height: 40px;
+  font-size: 22px;
+}
+li{
+  list-style: none;
+}
+.cards{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin: 10px;
+}
 .card {
   border: 1px solid #eee;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
   border-radius: 4px;
+  margin: 40px;
+}
+
+
+@media screen and (min-width:1200px) {
+  .cards{
+    grid-template-columns: repeat(3,1fr);
+  } 
 }
